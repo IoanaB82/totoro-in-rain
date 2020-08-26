@@ -1,0 +1,82 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    width: 600px;
+}
+
+.section-item {
+    padding: 20px;
+    border-radius: 1px;
+    -webkit-box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.75);
+box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.75);
+}
+
+
+
+
+/*totoro styling*/
+.totoro {
+    padding: 0;
+    background: url(totoro_bg1.jpg);
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+
+
+
+.totoro-only {
+    width: 600px;
+    height: 400;
+    background: url(totoro_600.png);
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+
+.section-item-rain {
+   
+    height: 100%;
+    background: url(rain.png);
+   
+    animation: rain 0.3s linear infinite;
+}
+
+@keyframes rain {
+    0% {
+        background-position: 0% 0%;
+    }
+
+   100% {
+        background-position: 20% 100%;
+    }
+}
+
+.totoro-only:hover {
+  
+    animation: shake 0.2s linear infinite;
+}
+
+@keyframes shake {
+    0% { transform: scale(1.01)}
+    33% {
+        transform: rotate(1deg);
+    }
+    66% {
+        transform: rotate(-1deg);
+    } 
+    100% {
+        transform: rotate(1deg);
+    } 
+} 
